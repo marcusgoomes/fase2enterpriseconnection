@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Kalam:wght@300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+    background-color: rgba(41, 31, 31, 1.0);
+}
+
+.hotel__ind{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bloco{
+    width: 50%;
+    height: 90vh;
+    border: 0.5px solid rgb(153, 91, 39);
+    border-radius: 3%;
+    padding: 1% 2% 0 2%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+.opcoes, label{
+    font-size: 0.8rem;
+}
+
+h3{
+    font-family: 'Courgette', cursive;
+    font-size: 1.2rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+    box-sizing: border-box;
+}
+
+.imagem {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../images/italia.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.infos{
+    width: 100%;
+    padding: 2% 0 0 0;
+    box-sizing: border-box;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2% 0 2% 0;
+    box-sizing: border-box;
+}
+
+.botao{
+    width: 20%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2px solid #fff;
+    color: #fff;
+}
+
+
+.botao a:hover{
+    background-color: rgba(153, 91, 39, 0.9);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.avaliacao {
+    padding-top: 5%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction:column;
+}
+
+label {
+    margin: 5px 0;
+    color: rgb(180, 180, 180);
+}
+
+textarea{
+    width: 100%;
+    height: 10%;
+    color: rgb(180, 180, 180);
+}
+
+@media (max-width: 940px) {
+    .bloco{
+        width: 90%;
+        height: 90vh;
+        border: 0.5px solid rgb(153, 91, 39);
+        border-radius: 3%;
+        padding: 1% 2% 0 2%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3{
+        font-family: 'Courgette', cursive;
+        font-size: 1.2rem;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    p{
+        color: #fff;
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+
+    .botoes{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2% 0 2% 0;
+        box-sizing: border-box;
+    }
+    
+    .botao{
+        width: 30%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0.1px solid rgb(153, 91, 39);
+        color: #fff;
+    }
+    
+    
+    .botao a:hover{
+        background-color: rgba(153, 91, 39, 0.9);
+        color: #fff;
+        width: 100%;
+        text-align: center;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+}

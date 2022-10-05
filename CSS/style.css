@@ -6,6 +6,12 @@
     font-size: 19px;
 }
 
+/* Da acessibilidade:
+- Não tem nenhum texto com menos do que 15 pixels
+- Não temos botões com áreas muito pequenas e que dificulte o clique
+- Na ferramenta accessible-colors.com tive o resultado de Passes AA (Required contrast ratio: 4.5, Your contrast ratio: 16.03)
+- Se tirar o CSS a página também fica fácil de entender e visualizar todo o conteúdo */
+
 ul {
     list-style: none;
 }
@@ -59,7 +65,7 @@ h2 {
 .banner {
     width: 100%;
     height: 100vh;
-    background-image: url(../spbrilhos.jpeg);
+    background-image: url(../images/pordosol.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -76,27 +82,19 @@ h2 {
 
 .header__botao {
     padding: 20px 10px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(41, 31, 31, 0.6);
     border-radius: 10px;
     font-size: 3rem;
     color: #fff;
 }
 
 .header__chamada a:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(41, 31, 31, 0.9);
     color: #fff;
 }
 
-.negocios, .passeio {
-    background-color: rgba(0, 0, 0, 1.0);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.trabalho {
-    background-color: rgba(30, 30, 30, 1.0);
+.hoteis {
+    background-color: rgba(41, 31, 31, 1.0);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,8 +107,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5vh 0 0 0;
-    box-sizing: border-box;
 }
 
 .blocos {
@@ -124,10 +120,10 @@ h2 {
 
 .bloco {
     width: 27%;
-    height: 50vh;
+    height: 55vh;
     border: 0.5px solid rgb(70, 70, 70);
     border-radius: 3%;
-    padding: 0 2% 0 2%;
+    padding: 0.7% 2% 1% 2%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -141,7 +137,7 @@ h1 {
 
 p {
     color: #fff;
-    text-align: justify;
+    text-align: center;
 }
 
 h3 {
@@ -153,10 +149,26 @@ h3 {
     box-sizing: border-box;
 }
 
-.imagem {
+.imagem__1 {
     width: 100%;
-    height: 20vh;
-    background-image: url(../images/hotelsp.jpeg);
+    height: 35vh;
+    background-image: url(../images/italia.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imagem__2 {
+    width: 100%;
+    height: 35vh;
+    background-image: url(../images/lahti.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imagem__3 {
+    width: 100%;
+    height: 35vh;
+    background-image: url(../images/suica.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -199,7 +211,7 @@ i {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(80, 80, 80);
+  background-color: rgb(153, 91, 39);
   padding: 2%;
 }
 
@@ -212,8 +224,7 @@ i {
 
 @media (max-width: 940px) {
     .header {
-        background-color: rgba(0, 0, 0, 0.7);
-        position: fixed;
+        background-color: rgba(41, 31, 31, 0.7);
         display: flex;
         justify-content: center;
         width: 100%;
@@ -248,7 +259,7 @@ i {
     .header__botao {
         padding: 5%;
         box-sizing: border-box;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(41, 31, 31, 0.5);
         border-radius: 3%;
         font-size: 2.5rem;
         color: #fff;
@@ -256,7 +267,7 @@ i {
     }
 
     .header__chamada a:hover {
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(41, 31, 31, 0.7);
         color: #fff;
     }
 
@@ -270,12 +281,14 @@ i {
 
     .titulobloco {
         width: 100%;
-        height: 10vh;
+        height: 20vh;
         display: flex;
         justify-content: center;
         align-items: flex-start;
         box-sizing: border-box;
         text-align: center;
+        position: relative;
+        bottom: 5%;
     }
 
     .blocos {
@@ -284,7 +297,7 @@ i {
         position: relative;
         left: 10%;
         width: 100%;
-        margin: 35vh 0 20vh 0;
+        margin: 20vh 0 20vh 0;
     }
 
     .bloco {
@@ -292,7 +305,7 @@ i {
         height: 50vh;
         border: 0.5px solid rgb(70, 70, 70);
         border-radius: 3%;
-        padding: 0 2% 0 2%;
+        padding: 2% 2% 2% 2%;
         margin: 7% 0 7% 0;
         box-sizing: border-box;
     }
