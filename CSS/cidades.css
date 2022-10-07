@@ -10,8 +10,8 @@
 }
 
 .hotel__ind{
-    width: 100%;
-    height: 100vh;
+    width: 95%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,10 +19,10 @@
 }
 
 .bloco{
-    width: 50%;
-    height: 90vh;
+    width: 60%;
+    height: 120vh;
     border: 0.5px solid rgb(153, 91, 39);
-    border-radius: 3%;
+    border-radius: 2%;
     padding: 1% 2% 0 2%;
     box-sizing: border-box;
     display: flex;
@@ -33,8 +33,11 @@
 
 p{
     color: #fff;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-spacing: 0.2rem;
+    font-weight:lighter;
 }
 
 .opcoes, label{
@@ -42,7 +45,7 @@ p{
 }
 
 h3{
-    font-family: 'Courgette', cursive;
+    /* font-family: 'Courgette', cursive; */
     font-size: 1.2rem;
     color: #fff;
     display: flex;
@@ -51,12 +54,31 @@ h3{
     box-sizing: border-box;
 }
 
-.imagem {
+.imagem_interlaken {
     width: 100%;
-    height: 40vh;
-    background-image: url(../images/italia.jpeg);
-    background-size: cover;
+    height: 50vh;
+    background-image: url(../images/suiça.jpg);
+    background-size: 30rem;
     background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imagem_veneza {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../images/veneza.jpg);
+    background-size: 30rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imagem_lahti {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../images/finlandia.jpg);
+    background-size: 30rem;
+    background-repeat: no-repeat;
+    background-position: center;    
 }
 
 .infos{
@@ -114,10 +136,17 @@ textarea{
     color: rgb(180, 180, 180);
 }
 
+figcaption {
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+
+
 @media (max-width: 940px) {
     .bloco{
         width: 90%;
-        height: 90vh;
+        height: 90%;
         border: 0.5px solid rgb(153, 91, 39);
         border-radius: 3%;
         padding: 1% 2% 0 2%;
@@ -129,7 +158,6 @@ textarea{
     }
 
     h3{
-        font-family: 'Courgette', cursive;
         font-size: 1.2rem;
         color: #fff;
         display: flex;
@@ -161,6 +189,7 @@ textarea{
         align-items: center;
         border: 0.1px solid rgb(153, 91, 39);
         color: #fff;
+        text-align: center;
     }
     
     
